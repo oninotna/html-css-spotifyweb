@@ -6,11 +6,11 @@
     <meta name="author" content="Antonino Musarra Tubbi">
     <meta name="description" content="Inserire qui del testo">
 
-    <title>Document</title>
+    <title>Spotify</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" href="./img/icon.png">
+    <link rel="icon" href="./img/favicon.ico">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -18,7 +18,40 @@
     <main>
         <div class="wrapper">
           <div class="main-section">
-              <section id="aside-menu"></section>
+              <section id="aside-menu">
+                <div class="home-logo-section">
+                    <img id="home-logo-small" src="./img/logo-small.svg" alt="spotify home logo small">
+                    <img id="home-logo" src="./img/logo.svg" alt="spotify home logo ">
+                </div>
+                <div class="nav">
+                    <div class="top-nav">
+                        <div class="primary-btn">
+                          <img id="home-btn" src="./img/home.svg" alt="spotify home button"><span>Home</span>
+                          <img id="search-btn" src="./img/search.svg" alt="spotify search button"><span>Cerca</span>
+                          <img id="library-btn" src="./img/libreria.svg" alt="spotify library button"> <span>La tua libreria</span>                       
+                        </div>
+                        <div class="playlist-section">
+                            <h3>PLAYLIST</h3>
+                            <div id="add-playlist"><i class="fa-solid fa-plus"></i></div><span>Crea Playlist</span>
+                            <ul id="playlist-list">
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                            </ul>
+                        </div>                        
+                    </div>
+                    <div class="bottom-nav">
+                        <div class="secondary-btn">
+                            <img id="download-btn" src="./img/download.svg" alt="spotify download button"><span>Installa app</span>
+                            <img id="user-btn" src="./img/profile.svg" alt="user profile button"><span>Oninotna</span>
+                        </div>                        
+                    </div>
+                </div>
+              </section>
               <section id="main-section-content">
                   <div id="main-section-top"></div>
                   <div id="content"></div>

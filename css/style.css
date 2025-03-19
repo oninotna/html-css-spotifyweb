@@ -1,7 +1,7 @@
 :root {
     --heigth-player-section: 80px;
     --height-top-main: 80px;
-    --width-aside-menu: 40px;
+    --width-aside-menu: 45px;
 }
 
 /* RESET */
@@ -23,6 +23,10 @@ a {
 ul {
     list-style-type: none;
 }
+
+/* .d-none {
+    display: none;
+} */
 
 /* UTILITY */
 
@@ -110,6 +114,45 @@ main {
 #aside-menu {
     width: var(--width-aside-menu);
     background-color: #000000;
+    padding: 8px;
+}
+
+#home-logo {
+    display: none;
+}
+
+.nav {
+    margin-top: 10px;
+}
+
+.nav span, h3 {
+    display: none;
+}
+
+#add-playlist {
+    background-color: #a3a3a3;
+    width: 35px;
+    height: 35px;
+    font-size: 26px;
+    padding: 5px;
+
+    display: none;
+}
+
+#playlist-list {
+    display: none;
+}
+
+#download-btn {
+    width: 18px;
+    margin: 5px;
+}
+
+#user-btn {
+    background-color: #808080;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
 }
 
 /* MAIN SECTION CONTENT */
