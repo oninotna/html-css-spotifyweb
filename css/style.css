@@ -1,6 +1,6 @@
 :root {
-    --heigth-player-section: 100px;
-    --height-top-main: 100px;
+    --heigth-player-section: 80px;
+    --height-top-main: 80px;
     --width-aside-menu: 50px;
 }
 
@@ -267,12 +267,14 @@ main {
 /* INIZIO PLAYER SECTION */
 .player-section {
     height: var(--heigth-player-section);
+    font-size: 10px;
     background-color: #282828;
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10px;
+    padding: 0 8px;
+    gap: 15px;
 }
 
 #album-name-player-section {
@@ -281,7 +283,7 @@ main {
 
 .player-section-left {
     display: flex;
-    gap: 20px;
+    gap: 10px;
 }
 
 .player-album {
@@ -294,8 +296,78 @@ main {
     margin-right: 10px;
 }
 
+.folder-icon {
+    color: #878787;
+}
 
+.player-main-section {
+    flex-grow: 1;
+}
 
+.player-controls {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+#play-btn {
+    font-size: 28px;
+}
+
+.player-time-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.time-bar {
+    width: 100%;
+    max-width: 450px;
+    height: 4px;
+    border-radius: 5px 5px 5px 5px;
+    background-color: #878787; 
+}
+
+.time-point {
+    width: 30px;
+    height: 4px;
+    border-radius: 5px 5px 5px 5px;
+    background-color: white;
+}
+
+.player-section-right {
+    display: flex;
+    gap: 10px;
+}
+
+.utility-btn {
+    display: flex;
+    gap: 10px;
+}
+
+.sound-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.sound-bar {
+    width: 60px;
+    height: 4px;
+    border-radius: 5px 5px 5px 5px;
+    background-color: #878787;
+}
+
+.gain-sound {
+    width: 20px;
+    height: 4px;
+    border-radius: 5px 5px 5px 5px;
+    background-color: white;
+}
 /* INZIO MEDIA QUERY MIN 576PX 'S' */
 @media screen and (min-width: 576px) {
     :root {
