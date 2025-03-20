@@ -1,7 +1,7 @@
 :root {
-    --heigth-player-section: 80px;
-    --height-top-main: 80px;
-    --width-aside-menu: 45px;
+    --heigth-player-section: 100px;
+    --height-top-main: 100px;
+    --width-aside-menu: 50px;
 }
 
 /* RESET */
@@ -268,6 +268,30 @@ main {
 .player-section {
     height: var(--heigth-player-section);
     background-color: #282828;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+#album-name-player-section {
+    color: #878787;
+}
+
+.player-section-left {
+    display: flex;
+    gap: 20px;
+}
+
+.player-album {
+    display: flex;
+}
+
+#album-play {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
 }
 
 
@@ -282,7 +306,7 @@ main {
         padding: 20px 0;
     }
 
-    #home-logo-section, .home,
+    .home-logo-section, .home,
     .search, .library, .playlist-section,
     .download, .user {
         padding: 0 20px;
