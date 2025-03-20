@@ -262,6 +262,7 @@ main {
 }
 
 #sub-upgrade:hover {
+    cursor: pointer;
     transform: scale(1.1);
 }
 /* INIZIO PLAYER SECTION */
@@ -283,11 +284,13 @@ main {
 
 .player-section-left {
     display: flex;
-    gap: 10px;
+    align-items: center;
+    gap: 15px;
 }
 
 .player-album {
     display: flex;
+    align-items: center;
 }
 
 #album-play {
@@ -296,8 +299,24 @@ main {
     margin-right: 10px;
 }
 
+#album-name-player-section:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: white;
+}
+
 .folder-icon {
     color: #878787;
+}
+
+#favorite-list:hover {
+    cursor: pointer;
+    color: white;
+}
+
+#folder-playlist:hover {
+    cursor: pointer;
+    color: white;
 }
 
 .player-main-section {
@@ -305,15 +324,37 @@ main {
 }
 
 .player-controls {
-    font-size: 16px;
+    font-size: 12px;
+    margin-bottom: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 16px;
+    gap: 30px;
 }
 
 #play-btn {
     font-size: 28px;
+}
+
+#shuffle:hover {
+    cursor: pointer;
+}
+
+#previous-btn:hover {
+    cursor: pointer;
+}
+
+#play-btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#next-btn:hover {
+    cursor: pointer;
+}
+
+#repeat-btn:hover {
+    cursor: pointer;
 }
 
 .player-time-bar {
@@ -332,10 +373,32 @@ main {
 }
 
 .time-point {
-    width: 30px;
+    width: 50%;
     height: 4px;
     border-radius: 5px 5px 5px 5px;
     background-color: white;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.circle-time-point {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: white;
+
+    display: none;
+}
+
+.time-point:hover {
+    cursor: pointer;
+    background-color: lime;
+}
+
+.time-point:hover .circle-time-point {
+    display: inline-block;
 }
 
 .player-section-right {
@@ -348,11 +411,23 @@ main {
     gap: 10px;
 }
 
+#list-code:hover {
+    cursor: pointer;
+}
+
+#device-connection {
+    cursor: pointer;
+}
+
 .sound-section {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5px;
+}
+
+#sound:hover {
+    cursor: pointer;
 }
 
 .sound-bar {
@@ -363,17 +438,31 @@ main {
 }
 
 .gain-sound {
-    width: 20px;
+    width: 40%;
     height: 4px;
     border-radius: 5px 5px 5px 5px;
     background-color: white;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
+
+.gain-sound:hover {
+    cursor: pointer;
+    background-color: lime;
+}
+
+.gain-sound:hover .circle-time-point {
+    display: inline-block;
+}
+
 /* INZIO MEDIA QUERY MIN 576PX 'S' */
 @media screen and (min-width: 576px) {
     :root {
         --width-aside-menu: 250px;
     }
-
+    /* ASIDE MENU */
     #aside-menu {
         padding: 20px 0;
     }
@@ -409,5 +498,35 @@ main {
 
     .download {
         border-bottom: 1px solid #878787;
+    }
+
+    /* PLAYER SECTION */
+    .player-section {
+        font-size: 12px;
+    }
+
+    #album-play {
+        width: 40px;
+        height: 40px;
+    }
+
+    .sound-bar {
+        width: 80px;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .player-section {
+        font-size: 14px;
+    }
+
+    .folder-icon {
+        display: flex;
+        gap: 10px;
+    }
+
+    .sound-bar {
+        width: 100px;
     }
 }
