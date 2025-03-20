@@ -115,7 +115,7 @@ main {
 #aside-menu {
     width: var(--width-aside-menu);
     background-color: #000000;
-    color: #a3a3a3;
+    color: #878787;
     padding: 8px;
 
     display: flex;
@@ -142,6 +142,25 @@ main {
     margin-bottom: 10px;
 }
 
+.primary-btn div {
+    margin-bottom: 10px;
+}
+
+.home:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.search:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.library:hover {
+    color: white;
+    cursor: pointer;
+}
+
 .playlist-section {
     margin-top: 30px;
 }
@@ -153,6 +172,16 @@ main {
 
 .add-section {
     margin-top: 10px;
+}
+
+.add-section:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.add-section:hover #add-playlist {
+    background-color: white;
+    cursor: pointer;
 }
 
 #add-playlist {
@@ -177,8 +206,28 @@ main {
     padding-bottom: 20px;
 }
 
-#download-btn {
+#playlist-list li:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.download:hover {
+    color: white;
+    cursor: pointer;
+}
+
+#aside-menu #download-btn {
     width: 18px;
+    margin: 10px 5px;
+}
+
+.user {
+    color: white;
+    margin-top: 10px;
+}
+
+.user:hover{
+    cursor: pointer;
 }
 
 #user-btn {
@@ -197,6 +246,24 @@ main {
 #content {
     height:calc(100vh - var(--height-top-main) - var(--heigth-player-section));
 }
+
+#main-section-top {
+    line-height: var(--height-top-main);
+    text-align: right;
+    margin-right: 10px;   
+}
+
+#sub-upgrade {
+    background-color: transparent;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 25px 25px 25px 25px;
+    border-color: currentColor;
+}
+
+#sub-upgrade:hover {
+    transform: scale(1.1);
+}
 /* INIZIO PLAYER SECTION */
 .player-section {
     height: var(--heigth-player-section);
@@ -212,7 +279,19 @@ main {
     }
 
     #aside-menu {
-        padding: 20px;
+        padding: 20px 0;
+    }
+
+    #home-logo-section, .home,
+    .search, .library, .playlist-section,
+    .download, .user {
+        padding: 0 20px;
+    }
+
+    .active {
+        border-left: 5px solid lime;
+        padding-left: calc(20px - 5px);
+        color: white;
     }
 
     #home-logo-small {
@@ -230,5 +309,9 @@ main {
     #add-playlist , #playlist-list,
     .playlist-section h3 {
         display: inline-block;
+    }
+
+    .download {
+        border-bottom: 1px solid #878787;
     }
 }
