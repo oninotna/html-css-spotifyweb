@@ -286,16 +286,26 @@ main {
     gap: 30px; 
 }
 
+#content-nav-list li {
+    position: relative;
+}
+
 #content-nav-list li:hover {
     color: white;
     transform: scale(1.1);
 }
 
-#content-nav-list li:hover,
-#content-nav-list li:after {
-    content: ' ';
-    border-bottom: 3px solid lime;
-    width: 20px;
+/* #content-nav-list li:hover, */
+#content-nav-list li:hover ::after {
+    content: '';
+    width: 30px;
+    height: 2px;
+    display: block;
+    background-color: lime;
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translate(-50%)
 }
 
 .album-section-playlist {
@@ -574,6 +584,8 @@ main {
     display: inline-block;
 }
 
+
+
 /* INZIO MEDIA QUERY MIN 576PX 'S' */
 @media screen and (min-width: 576px) {
     :root {
@@ -590,12 +602,18 @@ main {
         padding: 0 20px;
     }
 
-    .active {
+    /* .active {
+        border-left: 5px solid lime;
+        padding-left: calc(20px - 5px);
+        color: white;
+    } */
+
+    .primary-btn > div:hover {
         border-left: 5px solid lime;
         padding-left: calc(20px - 5px);
         color: white;
     }
-
+    
     #home-logo-small {
         display: none;
     }
